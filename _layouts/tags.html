@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+
+	<h1 class="page-heading">{{ page.title }}</h1>
+
+	{{ content }}
+
+	<p>
+		Все теги:
+		<br>
+		{% for tag in site.tags %}
+			{% if forloop.last == false %}
+				<a href="#{{ tag | first }}">{{ tag | first }}</a>,
+			{% else %}
+				<a href="#{{ tag | first }}">{{ tag | first }}</a>
+			{% endif %}
+		{% endfor %}
+	</p>
+
+	{% for tag in site.tags %}
+		<section id="{{ tag | first }}">
+			<b>{{ tag | first }}</b>
+			<ul>
+				{% for posts in tag %}
+					{% for post in posts %}
+						{% if post.url %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			</ul>
+		</section>
+	{% endfor %}
+
+</div>
