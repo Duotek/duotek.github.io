@@ -1,0 +1,15 @@
+---
+title: DUOTEK.dev
+email: dev@duotek.ru
+description: |
+  Копирование и распространение материалов привествуется. Пожалуйста, сохраняйте авторство и указывайте ссылку на источник
+baseurl: ''
+url: ''
+permalink: /:categories/:title.html
+markdown: kramdown
+theme: minima
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock

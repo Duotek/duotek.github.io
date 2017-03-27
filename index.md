@@ -1,0 +1,5 @@
+---
+title: Посты
+layout: home
+---
+
