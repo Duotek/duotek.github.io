@@ -4,7 +4,7 @@ email: dev@duotek.ru
 description: |
   Копирование и распространение материалов приветствуется. Пожалуйста, сохраняйте авторство и указывайте ссылку на источник
 baseurl: ''
-url: ''
+url: 'https://duotek.github.io'
 permalink: /:categories/:title.html
 markdown: kramdown
 theme: minima
