@@ -14,4 +14,4 @@ exclude:
 - Gemfile
 - Gemfile.lock
 disqus:
-  shortname: sashasushko
+  shortname: duotek
