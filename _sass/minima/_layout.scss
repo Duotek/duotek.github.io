@@ -212,4 +212,14 @@ $grey-color: #7d7d7d;
       @include relative-font-size(1.125);
     }
   }
+
+  img {
+	  display: block;
+	  margin: 10px auto;
+	  max-width: 100%;
+  }
+
+  li:not(:first-child) {
+	  margin-top: 10px;
+  }
 }
